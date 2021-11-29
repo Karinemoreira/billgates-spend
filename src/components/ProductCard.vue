@@ -2,8 +2,8 @@
   <div class="container">
     <div class="container__wrapper">
       <!--    <img :src="product.image" /> -->
-      <span v-bind="product.name">{{ product.name }}</span>
-      <span v-bind="product.price">{{ product.price }}</span>
+      <span>{{ products.name }}</span>
+      <span>{{ products.price }}</span>
     </div>
     <button>Sell</button>
     <input type="number" />
@@ -13,10 +13,9 @@
 
 <script>
   export default {
+    name: "ProductCard",
     props: {
-      name: {
-        type: String,
-      },
+      products: Object,
     },
   };
 </script>

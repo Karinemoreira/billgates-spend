@@ -6,10 +6,9 @@
   <div class="money-bar">{{ spend }}</div>
   <div>
     <product-card
-      v-for="product in products"
-      :key="product.name"
-      :name="product.name"
-      :price="product.price"
+      v-for="(products, index) in products"
+      :key="index"
+      :products="products"
     />
   </div>
 </template>
