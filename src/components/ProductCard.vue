@@ -1,0 +1,49 @@
+<template>
+  <div class="container">
+    <div class="container__wrapper">
+      <!--    <img :src="product.image" /> -->
+      <span v-bind="product.name">{{ product.name }}</span>
+      <span v-bind="product.price">{{ product.price }}</span>
+    </div>
+    <button>Sell</button>
+    <input type="number" />
+    <button>Buy</button>
+  </div>
+</template>
+
+<script>
+  export default {
+    props: {
+      name: {
+        type: String,
+      },
+    },
+  };
+</script>
+
+<style lang="scss" scoped>
+  .container {
+    max-width: 100%;
+    background-color: #fff;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px 15px;
+    width: 100%;
+    img {
+      display: block;
+      margin: 15px auto;
+      height: 120px;
+      max-width: 100%;
+      -o-object-fit: contain;
+      object-fit: contain;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+  }
+  .container__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+</style>
