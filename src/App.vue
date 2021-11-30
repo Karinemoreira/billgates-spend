@@ -27,13 +27,33 @@
       return {
         spend: "$100,000,000,000",
         products: [
-          { image: "", name: "Pizza", price: "$9" },
-          { image: "", name: "Macarrão", price: "$29" },
-          { image: "", name: "Lasanha", price: "$19" },
-          { image: "", name: "Sorvete", price: "$3" },
-          { image: "", name: "Soda", price: "$1" },
-          { image: "", name: "Camarão", price: "$5" },
-          { image: "", name: "Sopa", price: "$2" },
+          {
+            image: require("./assets/big-mac.jpg"),
+            name: "Pizza",
+            price: "$9",
+          },
+          {
+            image: require("./assets/big-mac.jpg"),
+            name: "Macarrão",
+            price: "$29",
+          },
+          {
+            image: require("./assets/big-mac.jpg"),
+            name: "Lasanha",
+            price: "$19",
+          },
+          {
+            image: require("./assets/big-mac.jpg"),
+            name: "Sorvete",
+            price: "$3",
+          },
+          { image: require("./assets/big-mac.jpg"), name: "Soda", price: "$1" },
+          {
+            image: require("./assets/big-mac.jpg"),
+            name: "Camarão",
+            price: "$5",
+          },
+          { image: require("./assets/big-mac.jpg"), name: "Sopa", price: "$2" },
         ],
       };
     },

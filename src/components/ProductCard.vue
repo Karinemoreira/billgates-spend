@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="container__wrapper">
-      <!--    <img :src="product.image" /> -->
+      <img :src="products.image" :alt="products.name" />
       <span>{{ products.name }}</span>
       <span>{{ products.price }}</span>
     </div>
